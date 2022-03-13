@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-  background: url("img/texture-paper.png");
+  background: url("compressed-img/texture-paper.png");
   background-size: 280px 280px;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .d-bloc {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 
 .d-bloc button:hover {
@@ -335,6 +335,9 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
   background: transparent;
+}
+.navbar-nav a:hover {
+  color: #a94c28;
 }
 
 .navbar-toggle {
@@ -649,14 +652,19 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
   font-family: "helvetica";
   font-weight: 400;
   color: #575757 !important;
 }
 footer {
   font-size: 15px;
+}
+footer a {
+  color: white !important;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 .container {
   max-width: 1000px;
@@ -775,20 +783,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-  background-color: #f3976c;
+  background-color: #be562d;
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color: white !important;
 }
 
 .btn-atomic-tangerine {
-  background: #f3976c;
+  background: #be562d;
   color: #ffffff !important;
 }
 
 .btn-atomic-tangerine:hover {
-  background: #c27956 !important;
+  background: #a94c28 !important;
   color: #ffffff !important;
 }
 
@@ -801,11 +809,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #be562d !important;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #c27956 !important;
+  color: #a94c28 !important;
 }
 
 .icon-dark-slate-blue {
@@ -814,19 +822,19 @@ h4 {
 }
 
 .bg-dots-bg {
-  background-image: url("img/dots-bg.png");
+  background-image: url("compressed-img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-  background-image: url("img/lines-h2-bg.png");
+  background-image: url("compressed-img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-  background-image: url("img/agence-la-panthere.jpg");
+  background-image: url("compressed-img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("compressed-img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
