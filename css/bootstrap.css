@@ -1443,7 +1443,7 @@ img {
 .thumbnail > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 270px;
 }
 
 .img-rounded {
@@ -2330,6 +2330,7 @@ pre code {
   .col-sm-6 {
     width: 50%;
   }
+
   .col-sm-5 {
     width: 41.66666667%;
   }

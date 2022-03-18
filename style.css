@@ -301,13 +301,10 @@ a:hover {
 }
 
 .navbar-brand img {
-  max-height: 200px;
+  height: 40px;
   margin: 0 5px 0 0;
   display: inline;
-}
-
-.navbar-brand img[src$="svg"] {
-  min-width: 100px;
+  width: 200px;
 }
 
 .nav-center .navbar-brand img {
@@ -579,8 +576,9 @@ a[data-lightbox]:hover img {
 .lightbox-caption {
   padding: 20px;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 1);
   position: absolute;
+  text-align: center;
   left: 15px;
   right: 15px;
   bottom: 5px;
@@ -593,11 +591,11 @@ a[data-lightbox]:hover img {
   top: 20px;
   right: 20px;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(148, 148, 148, 1);
   border: none;
   line-height: 30px;
   padding: 0 9px 5px;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .close-lightbox:hover,
@@ -605,18 +603,19 @@ a[data-lightbox]:hover img {
 .prev-lightbox:hover {
   opacity: 1;
   color: #fff;
+  background: rgb(130, 130, 130);
 }
 
 .next-lightbox,
 .prev-lightbox {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 1);
+  background: rgba(148, 148, 148, 1);
   transition: all 0.2s ease-in-out;
   position: absolute;
   top: 45%;
   z-index: 1;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .next-lightbox {
@@ -653,7 +652,18 @@ label,
   color: #575757 !important;
 }
 footer {
-  font-size: 15px;
+  font-size: 18px;
+}
+footer ul {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+footer li {
+  margin-right: 40px !important;
+  margin-bottom: 10px;
+  list-style-type: none;
 }
 footer a {
   color: rgba(255, 255, 255, 1) !important;
@@ -661,8 +671,23 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+@media (max-width: 767px) {
+  .row.social {
+    display: flex !important;
+    justify-content: space-around;
+  }
+}
+
+.partnership {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 .container {
   max-width: 1000px;
+}
+.col-sm-3 {
+  margin-bottom: 10px;
 }
 
 .hero-bloc-text {
@@ -968,8 +993,8 @@ h4 {
     box-shadow: none;
   }
   .navbar-brand img {
-    max-height: 40px;
-    width: auto;
+    max-height: 28px;
+    width: 152px;
   }
   .nav-invert .navbar-header {
     float: none;
