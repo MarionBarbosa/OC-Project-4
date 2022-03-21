@@ -2293,7 +2293,11 @@ pre code {
 .col-xs-offset-0 {
   margin-left: 0;
 }
-
+@media (max-width: 767px) {
+  .col-sm-6 img {
+    margin: auto;
+  }
+}
 @media (min-width: 768px) {
   .col-sm-1,
   .col-sm-10,
@@ -2336,6 +2340,9 @@ pre code {
   }
   .col-sm-4 {
     width: 33.33333333%;
+  }
+  .partnership .col-sm-4 {
+    width: 100%;
   }
   .col-sm-3 {
     width: 25%;

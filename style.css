@@ -58,7 +58,6 @@ a:hover {
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
-.bg-t-edge,
 .bg-b-edge,
 .bg-tl-edge,
 .bg-bl-edge,
@@ -733,7 +732,7 @@ p {
 
 .social {
   max-width: 400px;
-  margin: auto auto auto auto;
+  margin: 20px auto auto auto;
 }
 
 h2 {
@@ -850,6 +849,7 @@ h4 {
 
 .bg-banniere {
   background-image: url("img/img_webp/agence-la-panthere.webp");
+  background-size: 1920px;
 }
 
 .bg-presentation {
@@ -919,7 +919,9 @@ h4 {
     padding-right: constant(safe-area-inset-right);
   }
 }
-
+blockquote {
+  color: rgb(190, 86, 45);
+}
 @media (max-width: 767px) {
   .page-container {
     overflow-x: hidden;
